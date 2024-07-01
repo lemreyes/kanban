@@ -5,7 +5,7 @@ import light_icon from "../../../public/icon-light-theme.svg";
 
 export default function LightDarkToggle() {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row bg-linesLight">
       <Image src={light_icon} alt="light icon" />
       <div>slider</div>
       <Image src={dark_icon} alt="dark icon" />

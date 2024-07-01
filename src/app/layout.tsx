@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={JakartaSans.className}>
+      <body className={`${JakartaSans.className} h-screen`}>
         <Sidebar />
         {children}
       </body>
