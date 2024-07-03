@@ -8,8 +8,10 @@ export default function Home() {
   return (
     <Fragment>
       <Header />
-      <Sidebar />
-      <MainBoard />
+      <div className="flex flex-row">
+        <Sidebar />
+        <MainBoard />
+      </div>
     </Fragment>
   );
 }

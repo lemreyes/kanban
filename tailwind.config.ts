@@ -17,6 +17,7 @@ const config: Config = {
     colors: {
       lightGray: "#979797",
       linesLight: "#e4ebfa",
+      mainPurple: "#635fc7",
     },
   },
   plugins: [],
