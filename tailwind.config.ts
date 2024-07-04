@@ -18,6 +18,7 @@ const config: Config = {
       lightGray: "#979797",
       linesLight: "#e4ebfa",
       mainPurple: "#635fc7",
+      white: "#ffffff"
     },
   },
   plugins: [],
