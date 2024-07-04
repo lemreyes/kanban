@@ -11,9 +11,9 @@ export default function Header() {
         <Image src={logo_light} alt="logo" />
       </div>
       <div className="flex flex-row justify-between items-center w-full border-b border-linesLight p-4">
-        <h1 className="text-xl font-bold">Platform Launch</h1>
+        <h1 className="text-2xl font-bold">Platform Launch</h1>
         <div className="flex gap-8">
-          <button className="bg-mainPurple p-4 font-bold text-md text-white rounded-3xl">
+          <button className="bg-mainPurple p-4 font-bold text-base text-white rounded-3xl">
             + Add New Task
           </button>
           <button>
