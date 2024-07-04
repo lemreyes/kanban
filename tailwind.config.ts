@@ -18,6 +18,7 @@ const config: Config = {
       lightGray: "#979797",
       linesLight: "#e4ebfa",
       mainPurple: "#635fc7",
+      mediumGrey: "#828FA3",
       white: "#ffffff",
     },
     fontSize: {
@@ -44,6 +45,9 @@ const config: Config = {
       bodyL: "23px",
       bodyM: "15px",
     },
+    letterSpacing: {
+      widest: '.15em'
+    }
   },
   plugins: [],
 };
