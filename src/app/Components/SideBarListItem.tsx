@@ -9,9 +9,16 @@ export default function SideBarListItem({
   board_name: string;
   isSelected: boolean;
 }) {
-  const selectedStyle = "bg-mainPurple";
+  let selectedStyle = "";
+  if (true === isSelected) {
+    selectedStyle = "bg-mainPurple text-white rounded-r-full";
+  } else {
+    selectedStyle = "bg-white text-mediumGrey";
+  }
   return (
-    <li className="flex flex-row gap-4 py-4 w-[275] text-headingM font-headingM leading-headingM bg-mainPurple text-white rounded-r-full">
+    <li
+      className={`flex flex-row gap-4 py-4 max-w-[275px] text-headingM font-headingM leading-headingM ${selectedStyle}`}
+    >
       <Image
         src={isSelected ? board_icon_selected : board_icon_notSelected}
         alt="board_icon"
