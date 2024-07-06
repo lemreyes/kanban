@@ -1,17 +1,16 @@
 import Image from "next/image";
 import MainBoard from "./Components/MainBoard";
 import Header from "./Components/Header";
-import { Fragment } from "react";
 import Sidebar from "./Components/Sidebar";
 
 export default function Home() {
   return (
-    <Fragment>
+    <div className="flex flex-col h-screen">
       <Header />
-      <div className="flex flex-row">
+      <div className="flex flex-row flex-1">
         <Sidebar />
         <MainBoard />
       </div>
-    </Fragment>
+    </div>
   );
 }
