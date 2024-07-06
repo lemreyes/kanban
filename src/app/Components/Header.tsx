@@ -7,7 +7,7 @@ import more_icon from "../../../public/icon-vertical-ellipsis.svg";
 export default function Header() {
   return (
     <header className="flex flex-row">
-      <div className="min-w-[300px] border-r border-linesLight p-8">
+      <div className="min-w-80 border-r border-linesLight p-8">
         <Image src={logo_light} alt="logo" />
       </div>
       <div className="flex flex-row justify-between items-center w-full border-b border-linesLight p-4">
