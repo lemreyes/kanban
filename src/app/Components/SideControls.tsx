@@ -5,7 +5,7 @@ import eye_icon from "../../../public/icon-show-sidebar.svg";
 
 export default function SideControls() {
   return (
-    <div>
+    <div className="p-8">
       <LightDarkToggle />
       <button className="flex">
         <Image src={eye_icon} alt="eye icon" />
