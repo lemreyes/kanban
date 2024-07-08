@@ -1,3 +1,4 @@
+"use client";
 import SideMenu from "./SideMenu";
 import SideControls from "./SideControls";
 
