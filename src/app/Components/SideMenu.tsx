@@ -7,7 +7,7 @@ import new_board_icon from "../../../public/icon-board-newboard.svg";
 export default function SideMenu() {
   return (
     <div>
-      <h2 className="text-headingS font-headingS leading-headingS letters tracking-widest text-mediumGrey uppercase ml-8 mb-4">
+      <h2 className="text-headingS font-headingS leading-headingS letters tracking-widest text-mediumGrey uppercase ml-8 mt-4 mb-4">
         All boards (3)
       </h2>
       <ul>
