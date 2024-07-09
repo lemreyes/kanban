@@ -9,7 +9,11 @@ export default function Logo() {
   console.log("Logo isDarkMode: ", isDarkMode);
 
   return (
-    <div className="min-w-80 border-r border-linesLight p-8">
+    <div
+      className={`min-w-80 border-r border-linesLight p-8 ${
+        isDarkMode ? "bg-darkGray" : "bg-white"
+      }`}
+    >
       <Image src={isDarkMode ? logo_dark : logo_light} alt="logo" />
     </div>
   );

@@ -16,9 +16,12 @@ const config: Config = {
     },
     colors: {
       lightGray: "#f4f7fd",
-      linesLight: "#e4ebfa",
-      mainPurple: "#635fc7",
       mediumGrey: "#828FA3",
+      darkGray: "#2b2c37",
+      linesLight: "#e4ebfa",
+      linesDark: "#3e3f4e",
+      mainPurple: "#635fc7",
+      black: "#000112",
       white: "#ffffff",
     },
     fontSize: {
@@ -46,8 +49,8 @@ const config: Config = {
       bodyM: "15px",
     },
     letterSpacing: {
-      widest: '.15em'
-    }
+      widest: ".15em",
+    },
   },
   plugins: [],
 };
