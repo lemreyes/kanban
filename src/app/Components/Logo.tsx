@@ -10,8 +10,8 @@ export default function Logo() {
 
   return (
     <div
-      className={`min-w-80 border-r border-linesLight p-8 ${
-        isDarkMode ? "bg-darkGray" : "bg-white"
+      className={`min-w-80 border-r  p-8 ${
+        isDarkMode ? "bg-darkGray border-linesDark" : "bg-white border-linesLight"
       }`}
     >
       <Image src={isDarkMode ? logo_dark : logo_light} alt="logo" />

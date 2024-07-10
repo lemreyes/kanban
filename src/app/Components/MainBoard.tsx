@@ -1,6 +1,11 @@
+"use client"
+import { useKanbanTheme } from "../ThemeContext";
+
 export default function MainBoard() {
+  const { isDarkMode } = useKanbanTheme();
+
   return (
-    <main className="bg-lightGray w-full flex items-center justify-center">
+    <main className={`${isDarkMode ? "bg-veryDarkGray" : "bg-lightGray"} w-full flex items-center justify-center`}>
       <div className="flex flex-col items-center gap-4">
         <p className="text-mediumGrey text-headingL font-headingL leading-headingL">
           This board is empty. Create a new column to get started.
