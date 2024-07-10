@@ -13,7 +13,7 @@ export default function SideBarListItem({
   if (true === isSelected) {
     selectedStyle = "bg-mainPurple text-white rounded-r-full";
   } else {
-    selectedStyle = "bg-white text-mediumGrey";
+    selectedStyle = "text-mediumGrey";
   }
   return (
     <li
