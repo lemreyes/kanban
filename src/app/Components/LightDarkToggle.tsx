@@ -13,7 +13,7 @@ export default function LightDarkToggle() {
   };
 
   return (
-    <div className="flex flex-row gap-4 p-4 justify-center bg-linesLight border-b-linesLight rounded-md">
+    <div className={`flex flex-row gap-4 p-4 justify-center rounded-md ${isDarkMode ? "bg-veryDarkGray" : "bg-linesLight"}`}>
       <Image src={light_icon} alt="light icon" />
       <label>
         <input
