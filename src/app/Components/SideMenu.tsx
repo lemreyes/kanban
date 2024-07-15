@@ -9,7 +9,7 @@ export default function SideMenu({ boards }: { boards: Array<Board> }) {
   return (
     <div>
       <h2 className="text-headingS font-headingS leading-headingS letters tracking-widest text-mediumGrey uppercase ml-8 mt-4 mb-4">
-        All boards ({boards.length()})
+        All boards ({boards.length})
       </h2>
       <ul>
         <SideBarListItem board_name="Dummy1" isSelected={true} />
