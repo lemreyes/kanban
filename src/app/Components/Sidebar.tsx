@@ -2,8 +2,9 @@
 import SideMenu from "./SideMenu";
 import SideControls from "./SideControls";
 import { useKanbanTheme } from "../ThemeContext";
+import { Board } from "../Types/Types";
 
-export default function Sidebar() {
+export default function Sidebar({ boards }: { boards: Array<Board> }) {
   const { isDarkMode } = useKanbanTheme();
 
   return (
@@ -14,7 +15,7 @@ export default function Sidebar() {
           : "bg-white text-black border-linesLight"
       } `}
     >
-      <SideMenu />
+      <SideMenu boards={boards} />
       <SideControls />
     </aside>
   );
