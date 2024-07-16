@@ -12,9 +12,13 @@ export default function SideMenu({ boards }: { boards: Array<Board> }) {
         All boards ({boards.length})
       </h2>
       <ul>
-        <SideBarListItem board_name="Dummy1" isSelected={true} />
-        <SideBarListItem board_name="Dummy2" isSelected={false} />
-        <SideBarListItem board_name="Dummy3" isSelected={false} />
+        {boards.map((board) => (
+          <SideBarListItem
+            board_name={board.name}
+            key={board.id}
+            isSelected={false}
+          />
+        ))}
       </ul>
       <ul>
         <li className="flex flex-row gap-4 py-4 max-w-[275px] text-headingM font-headingM leading-headingM text-mainPurple">
