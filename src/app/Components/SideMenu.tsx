@@ -11,7 +11,7 @@ export default function SideMenu({ boards }: { boards: Array<Board> }) {
       <h2 className="text-headingS font-headingS leading-headingS letters tracking-widest text-mediumGrey uppercase ml-8 mt-4 mb-4">
         All boards ({boards.length})
       </h2>
-      <ul>
+      <div>
         {boards.map((board) => (
           <SideBarListItem
             board_name={board.name}
@@ -19,9 +19,7 @@ export default function SideMenu({ boards }: { boards: Array<Board> }) {
             isSelected={false}
           />
         ))}
-      </ul>
-      <ul>
-        <li className="flex flex-row gap-4 py-4 max-w-[275px] text-headingM font-headingM leading-headingM text-mainPurple">
+        <button className="flex flex-row gap-4 py-4 max-w-[275px] text-headingM font-headingM leading-headingM text-mainPurple">
           <Image
             src={new_board_icon}
             alt="board_icon"
@@ -30,8 +28,8 @@ export default function SideMenu({ boards }: { boards: Array<Board> }) {
             className="ml-8"
           />
           <p>+ Create New Board</p>
-        </li>
-      </ul>
+        </button>
+      </div>
     </div>
   );
 }

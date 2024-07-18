@@ -16,7 +16,7 @@ export default function SideBarListItem({
     selectedStyle = "text-mediumGrey";
   }
   return (
-    <li
+    <button
       className={`flex flex-row gap-4 py-4 max-w-[275px] text-headingM font-headingM leading-headingM ${selectedStyle}`}
     >
       <Image
@@ -27,6 +27,6 @@ export default function SideBarListItem({
         className="ml-8"
       />
       <p>{board_name}</p>
-    </li>
+    </button>
   );
 }
