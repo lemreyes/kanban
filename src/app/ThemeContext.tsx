@@ -13,7 +13,6 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 // Create a custom hook to use the context
 export function useKanbanTheme() {
   const context = useContext(ThemeContext);
-  console.log("Context: ", context);
   if (!context) {
     throw new Error("useTheme must be used within a ThemeProvider");
   }

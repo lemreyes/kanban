@@ -6,7 +6,6 @@ import logo_dark from "../../../public/logo-light.svg";
 
 export default function Logo() {
   let { isDarkMode } = useKanbanTheme();
-  console.log("Logo isDarkMode: ", isDarkMode);
 
   return (
     <div

@@ -8,7 +8,6 @@ import { Board } from "./Types/Types";
 
 export default async function Home() {
   const boards: Array<Board> = await prisma.board.findMany();
-  console.log("Boards: ", boards);
 
   return (
     <div className="flex flex-col h-screen">
