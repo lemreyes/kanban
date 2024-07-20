@@ -7,6 +7,7 @@ import prisma from "./utils/prisma";
 import { Board } from "./Types/Types";
 
 export default async function Home() {
+  // todo: only show board for specific USER
   const boards: Array<Board> = await prisma.board.findMany();
 
   return (
